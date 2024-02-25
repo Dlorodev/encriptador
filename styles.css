@@ -65,3 +65,62 @@ select {
     display: flex;
     color: inherit;
 }
+
+
+/*Header*/
+.header {}
+
+.header .a {}
+
+.header .a .img {}
+
+
+/*Main*/
+.main {}
+
+/*Input section*/
+.section-input .section-input .textarea {}
+
+.section-input .div {}
+
+.section-input .div .svg {}
+
+.section-input .div .p {}
+
+.section-input .buttons {}
+
+.button {}
+
+.section-input .buttons .primary-button {}
+
+.section-input .buttons .secondary-button {}
+
+
+/*Result section*/
+.section-result {}
+
+.section-result .div {}
+
+.section-result .div .img {}
+
+.section-result .div .p1 {}
+
+.section-result .div .p2 {}
+
+.section-result .div .copy {}
+
+
+/*Footer*/
+.footer {}
+
+.footer .rrss {}
+
+.footer .rrss .ul {}
+
+.footer .rrss .ul .li {}
+
+.footer .rrss .ul .li .a {}
+
+.footer .rrss .ul .li .a .svg {}
+
+.footer .copyright {}
