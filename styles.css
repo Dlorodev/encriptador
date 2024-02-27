@@ -32,7 +32,6 @@ a {
     display: block;
     text-decoration: none;
     color: inherit;
-    cursor: none;
 }
 
 p a {
@@ -66,30 +65,112 @@ select {
     color: inherit;
 }
 
+body {
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+.total-div {
+    border: 1px solid red;
+    width: 100%;
+    height: 95vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+}
 
 /*Header*/
-.header {}
+.header {
+    background-color: aqua;
+    width: 120px;
+    height: 48px;
+    margin: 40px 0 0 0;
+
+    align-self: self-start;
+
+}
 
 .header .a {}
 
-.header .a .img {}
+.header .a .img {
+    width: 120px;
+    height: 48px;
+}
 
 
 /*Main*/
-.main {}
+.main {
+    background-color: blueviolet;
+    width: 80%;
+    height: 100%;
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 /*Input section*/
-.section-input .section-input .textarea {}
+.section-input {
+    background-color: yellow;
+    width: 70%;
+    height: 100%;
+    padding: 0 4rem;
 
-.section-input .div {}
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-.section-input .div .svg {}
+}
 
-.section-input .div .p {}
+.section-input .textarea {
+    padding: 6rem 0 0 0;
+    resize: none;
+    outline-style: none;
+    border: none;
 
-.section-input .buttons {}
+    width: 100%;
+    height: 80%;
+}
 
-.button {}
+.section-input .disclaimer {
+    display: flex;
+    gap: 1rem;
+    padding: 0 0 0 3rem;
+}
+
+.section-input .disclaimer .svg {}
+
+.section-input .disclaimer .p {}
+
+.section-input .buttons {
+    background-color: red;
+    width: 600px;
+    padding: 1rem 0 0 0;
+    display: flex;
+    gap: 20px;
+
+    align-self: center;
+
+}
+
+.button {
+    width: 280px;
+    height: 60px;
+    width: 50%;
+    padding: 0;
+
+    border: solid 1px black;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
 
 .section-input .buttons .primary-button {}
 
@@ -97,21 +178,59 @@ select {
 
 
 /*Result section*/
-.section-result {}
+.section-result {
+    background-color: brown;
+    width: 30%;
+    height: 100%;
+    border: solid 1px black;
+    border-radius: 10px;
 
-.section-result .div {}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.section-result .div .img {}
+}
 
-.section-result .div .p1 {}
+.section-result .result-before {
+    background-color: green;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
 
-.section-result .div .p2 {}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 
-.section-result .div .copy {}
+
+}
+
+.section-result .result-before .img {
+    border: solid 1px white;
+    width: 85%;
+}
+
+.section-result .result-before .p1 {
+    background-color: cyan;
+    width: 70%;
+    font-size: 1.5em;
+}
+
+.section-result .result-before .p2 {
+    background-color: cyan;
+    width: 70%;
+    font-size: 1em;
+}
+
+.section-result .result-before .copy {}
 
 
 /*Footer*/
-.footer {}
+.footer {
+    background-color: blue;
+    height: 5vh;
+}
 
 .footer .rrss {}
 
