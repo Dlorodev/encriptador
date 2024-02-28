@@ -257,16 +257,42 @@ body {
 /*Footer*/
 .footer {
     height: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
 }
 
 .footer .rrss {}
 
-.footer .rrss .ul {}
+.footer .span {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--primary-gray);
+}
+
+.footer .rrss .ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.4rem;
+}
 
 .footer .rrss .ul .li {}
 
-.footer .rrss .ul .li .a {}
+.footer .rrss .ul .li .a {
+    cursor: pointer;
+}
 
 .footer .rrss .ul .li .a .svg {}
 
-.footer .copyright {}
+.footer .copyright {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--primary-gray);
+}
