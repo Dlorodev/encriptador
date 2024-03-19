@@ -1,3 +1,5 @@
+
+
 function hideResultBefore() {
     document.getElementById('result-before').style.display = "none";
     document.getElementById('result-after').style.display = "flex";
@@ -31,4 +33,21 @@ function encrypt() {
 
     textEncrypted = textArray.join("");
     document.getElementById('textarea2').value = textEncrypted;
+}
+
+//decrypt function
+function decrypt() {
+    let textarea1 = document.getElementById('textarea1');
+    let textToDecrypt = textarea1.value;
+    let subStr = [/enter/g, /imes/g, /ai/g, /ober/g, /ufat/g];
+    let replaceChar = ["e", "i", "a", "o", "u"];
+    let decryptedText;
+
+    for (let x = 0; x < subStr.length; x++) {
+        textToDecrypt = textToDecrypt.replace(subStr[x], replaceChar[x]);
+
+    }
+
+    decryptedText = textToDecrypt;
+    document.getElementById('textarea2').value = decryptedText;
 }
