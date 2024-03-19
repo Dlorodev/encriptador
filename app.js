@@ -51,3 +51,14 @@ function decrypt() {
     decryptedText = textToDecrypt;
     document.getElementById('textarea2').value = decryptedText;
 }
+
+//copy function
+function copyText() {
+    let textToCopy = document.getElementById('textarea2');
+
+    document.getElementById('textarea1').value = "";
+    textToCopy.select();
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+    alert("Texto copiado en el portapapeles -> " + textarea2.value)
+}
