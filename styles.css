@@ -252,7 +252,7 @@ body {
 }
 
 
-.section-result .result-after {
+.result-after {
     display: none;
 
     flex-direction: column;
@@ -262,7 +262,7 @@ body {
     height: 90%;
 }
 
-.section-result .result-after .textarea2 {
+.result-after .textarea2 {
     width: 100%;
     height: 88%;
     padding: 2rem 0 0 0;
@@ -275,7 +275,7 @@ body {
     font-size: 1.5rem;
 }
 
-.section-result .result-after .copy {
+.result-after .copy {
     height: 60px;
     width: 90%;
     padding: 1.5rem;
@@ -333,4 +333,55 @@ body {
     font-weight: 500;
     font-size: 0.75rem;
     color: var(--primary-gray);
+}
+
+/*tablet breackpoint 768px*/
+@media screen and (max-width: 768px) {
+
+    .total-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main {
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .section-result {
+        width: 90%;
+        height: 133px;
+        gap: 16px;
+    }
+
+    .result-transform {
+        width: 90%;
+        height: 343px;
+        background-color: var(--white);
+        border-radius: 2rem;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-result .result-before .img {
+        display: none;
+    }
+
+    .result-after {
+        width: 80%;
+        height: 343px;
+    }
+
+    .result-after .textarea2 {
+        width: 100%;
+        height: 343px;
+    }
+
+    .copy {
+        margin: 0 0 1rem 0;
+    }
+
 }

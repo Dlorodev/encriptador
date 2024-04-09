@@ -37,13 +37,14 @@
                     <p class="p">Solo letras minusculas y sin acentos</p>
                 </div>
                 <div class="buttons">
-                    <button class="button primary-button" type="button" onclick='hideResultBefore(); encrypt();'
-                        id="button1">Encriptar</button>
-                    <button class="button secondary-button" onclick="decrypt();" type="button">Desencriptar</button>
+                    <button class="button primary-button" type="button"
+                        onclick='hideResultBefore(); encrypt(); changeResultArea();' id="button1">Encriptar</button>
+                    <button class="button secondary-button" onclick='hideResultBefore(); decrypt(); changeResultArea();'
+                        type="button">Desencriptar</button>
                 </div>
             </section>
 
-            <section class="section-result">
+            <section class="section-result" id="section-result">
 
                 <div id="result-before" class="result-before">
                     <img src="./assets/Muñeco.png" alt="" class="img" id="image1">

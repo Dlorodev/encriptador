@@ -3,6 +3,7 @@
 function hideResultBefore() {
     document.getElementById('result-before').style.display = "none";
     document.getElementById('result-after').style.display = "flex";
+
 }
 
 
@@ -61,4 +62,14 @@ function copyText() {
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
     alert("Texto copiado en el portapapeles -> " + textarea2.value)
+}
+
+function changeResultArea() {
+    var sectionResult = document.getElementById('section-result');
+    var viewportWidth = window.innerWidth;
+
+    if (viewportWidth === 768) {
+        sectionResult.classList.remove('section-result');
+        sectionResult.classList.add('result-transform');
+    }
 }
