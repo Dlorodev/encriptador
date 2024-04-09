@@ -61,15 +61,18 @@ function copyText() {
     textToCopy.select();
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
-    alert("Texto copiado en el portapapeles -> " + textarea2.value)
+    alert("Texto copiado en el portapapeles!")
 }
 
 function changeResultArea() {
     var sectionResult = document.getElementById('section-result');
     var viewportWidth = window.innerWidth;
 
-    if (viewportWidth === 768) {
+    if (viewportWidth <= 768) {
         sectionResult.classList.remove('section-result');
         sectionResult.classList.add('result-transform');
+    } else if (viewportWidth <= 480) {
+        sectionResult.classList.remove('section-result');
+        sectionResult.classList.add('result-transform2');
     }
 }
